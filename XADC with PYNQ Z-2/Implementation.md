@@ -84,5 +84,12 @@
  1. “Constant” into the Search bar, find and double click on **Constant**
  1. Click on Fixed IP and set Const val to 0. Connect to vn_in and vp_in.
 
+     <p align="center">
+       <img src ="pic/Block_design.png" width="90%" height="80%"/>
+       </p>
+       <p align = "center">
+        <i> Block Design View </i>
+        </p> 
+
 
     
