@@ -8,7 +8,7 @@
 1.	In the Default Part window, select the Boards tab, and depending on the board you are using, (if you can't find the board you are looking for, refer to ![README.md](/README.md) for setup) and click Next.
 
 <p align="center">
-    <img src ="pics/lab1/1_BoardsandParts.jpg" width="80%" height="80%"/>
+    <img src ="pic/1_BoardsandParts.jpg" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i>Boards and Parts Selection</i>
