@@ -6,3 +6,10 @@
 1.	Enter **lab1** in the Project Name field.  Make sure that the **Create Project Subdirectory** box is checked.  Click Next.
 1.	In the Project Type form select **RTL Project**, and check the box **Do not specify sources at this time**. Click **Next**
 1.	In the Default Part window, select the Boards tab, and depending on the board you are using, (if you can't find the board you are looking for, refer to ![README.md](/README.md) for setup) and click Next.
+
+<p align="center">
+    <img src ="pics/lab1/1_BoardsandParts.jpg" width="80%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i>Boards and Parts Selection</i>
+    </p>
