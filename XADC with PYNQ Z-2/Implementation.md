@@ -52,3 +52,11 @@
 1.	A new window pops up called the Run Block Automation window. In it, select **/processing_system7_0**, leave the default settings and click OK.
 
 1. Once Block Automation has been completed, notice that ports have been automatically added for the DDR (double data rate, a type of memory) and Fixed IO, and some additional ports are now visible. The imported configuration for the Zynq related to the board has been applied which will now be modified. The block should finally look like this:
+
+
+    <p align="center">
+    <img src ="pic/5_Zynqblck.jpg" width="90%" height="80%"/>
+    </p>
+    <p align = "center">
+     <i> Zynq Block with DDR and Fixed IO ports</i>
+    </p>  
