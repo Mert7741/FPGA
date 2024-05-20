@@ -13,3 +13,38 @@
     <p align = "center">
     <i>Boards and Parts Selection</i>
     </p>
+### Creating the System Using the IP Integrator
+
+1.	In the Flow Navigator, click **Create Block Design** under IP Integrator.
+    <p align="center">
+    <img src ="pics/lab1/3_CreateIP.jpg" width="20%" height="20%"/>
+    </p>
+    <p align = "center">
+    <i>Create IP Integrator Block Diagram</i>
+    </p>
+
+1.	Enter **system** for the design name and click OK.
+
+1.	Right-click anywhere in the Diagram workspace and select **Add IP**.
+    <p align="center">
+    <img src ="pics/lab1/4_AddIP.jpg" width="80%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i>Add IP to Block Diagram</i>
+    </p>        
+
+
+1.	Once the **IP Catalog** opens, type “zynq” into the Search bar, find and double click on **ZYNQ7 Processing System** entry, or click on the entry and hit the Enter key to add it to the design.
+
+1.	Notice the message at the top of the Diagram window in a green label saying that Designer Assistance available. Click **Run Block Automation**.  
+
+1.	A new window pops up called the Run Block Automation window. In it, select **/processing_system7_0**, leave the default settings and click OK.
+
+1. Once Block Automation has been completed, notice that ports have been automatically added for the DDR (double data rate, a type of memory) and Fixed IO, and some additional ports are now visible. The imported configuration for the Zynq related to the board has been applied which will now be modified. The block should finally look like this:
+
+    <p align="center">
+    <img src ="pics/lab1/5_Zynqblck.jpg" width="90%" height="80%"/>
+    </p>
+    <p align = "center">
+     <i> Zynq Block with DDR and Fixed IO ports</i>
+    </p>  
