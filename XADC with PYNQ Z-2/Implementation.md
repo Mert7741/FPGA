@@ -17,7 +17,7 @@
 
 1.	In the Flow Navigator, click **Create Block Design** under IP Integrator.
     <p align="center">
-    <img src ="pics/lab1/3_CreateIP.jpg" width="20%" height="20%"/>
+    <img src ="pic/3_CreateIP.jpg" width="20%" height="20%"/>
     </p>
     <p align = "center">
     <i>Create IP Integrator Block Diagram</i>
