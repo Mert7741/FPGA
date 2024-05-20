@@ -17,7 +17,7 @@
 
 1.	Check the Project Summary (should be similar to what you see below) and click Finish to create an empty Vivado project.
     <p align="center">
-    <img src ="pics/lab1/2_ProjectSummary.jpg" width="80%" height="80%"/>
+    <img src ="pic/2_ProjectSummary.jpg" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i>Project Summary</i>
