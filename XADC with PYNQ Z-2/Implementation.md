@@ -6,7 +6,7 @@
 1.	Click the Browse button of the Project Location field of the New Project and browse to **{labs}**, and click Select.
 1.	Enter **lab1** in the Project Name field.  Make sure that the **Create Project Subdirectory** box is checked.  Click Next.
 1.	In the Project Type form select **RTL Project**, and check the box **Do not specify sources at this time**. Click **Next**
-1.	In the Default Part window, select the Boards tab, and depending on the board you are using, (if you can't find the board you are looking for, refer to ![README.md](/README.md) for setup) and click Next.
+1.	In the Default Part window, select the Boards tab, and depending on the board you are using and click Next.
 
     <p align="center">
     <img src ="pic/1_BoardsandParts.jpg" width="80%" height="80%"/>
@@ -64,4 +64,25 @@
   1.	Right-click anywhere in the Diagram workspace and select **Add IP**.
   1.   “XADC” into the Search bar, find and double click on **XADC Wizard** entry, or click on the entry and hit the Enter key to add it to the design.
   1.   Click  **Run Block Automation**  , select all automation click OK.
-  1.   
+
+       <p align="center">
+       <img src ="pic/Add_XADC.png" width="90%" height="80%"/>
+       </p>
+       <p align = "center">
+        <i> System Assembly View after Adding the XADC Wizard</i>
+        </p>  
+ ### Configure the XADC IP
+ 1. Double-click on the XADC IP. 
+ 1. Click the basic tab. 
+ 1. Select: AXI4Lite, Channel Sequncer, Continuous Mode and KSPS=200.
+ 1. (ADC Conversion Rate can change but max 1000)
+ 1. Click the alarms tab, All alarms disabled.
+ 1. Click the Single Channel and Select channel VAUXP1 VAUXN1 and channel enable
+ 1. Close XADC Wizard
+ 1. Right click on the VAUX1 and select the make a external. Change name (A0).
+ 1. Right-click anywhere in the Diagram workspace and select **Add IP**.
+ 1. “Constant” into the Search bar, find and double click on **Constant**
+ 1. Click on Fixed IP and set Const val to 0. Connect to vn_in and vp_in.
+
+
+    
