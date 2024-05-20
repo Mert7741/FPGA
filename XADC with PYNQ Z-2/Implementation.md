@@ -1,23 +1,34 @@
-
+## Steps
+### Create a Vivado Project
 
 1.	Open Vivado by selecting **Start > All Programs > Xilinx Design Tools > Vivado 2021.2**
 1.	Click **Create Project** to start the wizard. You will see the Create a New Vivado Project dialog box. Click Next.
 1.	Click the Browse button of the Project Location field of the New Project and browse to **{labs}**, and click Select.
 1.	Enter **lab1** in the Project Name field.  Make sure that the **Create Project Subdirectory** box is checked.  Click Next.
 1.	In the Project Type form select **RTL Project**, and check the box **Do not specify sources at this time**. Click **Next**
-1.	In the Default Part window, select the Boards tab, and depending on the board you are using, click Next.
+1.	In the Default Part window, select the Boards tab, and depending on the board you are using, (if you can't find the board you are looking for, refer to ![README.md](/README.md) for setup) and click Next.
 
-<p align="center">
+    <p align="center">
     <img src ="pic/1_BoardsandParts.jpg" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i>Boards and Parts Selection</i>
     </p>
+
+1.	Check the Project Summary (should be similar to what you see below) and click Finish to create an empty Vivado project.
+    <p align="center">
+    <img src ="pics/lab1/2_ProjectSummary.jpg" width="80%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i>Project Summary</i>
+    </p>
+
+
 ### Creating the System Using the IP Integrator
 
 1.	In the Flow Navigator, click **Create Block Design** under IP Integrator.
     <p align="center">
-    <img src ="pic/2_ProjectSummary.jpg" width="80%" height="80%"/>
+    <img src ="pic/3_CreateIP.jpg" width="20%" height="20%"/>
     </p>
     <p align = "center">
     <i>Create IP Integrator Block Diagram</i>
@@ -41,10 +52,3 @@
 1.	A new window pops up called the Run Block Automation window. In it, select **/processing_system7_0**, leave the default settings and click OK.
 
 1. Once Block Automation has been completed, notice that ports have been automatically added for the DDR (double data rate, a type of memory) and Fixed IO, and some additional ports are now visible. The imported configuration for the Zynq related to the board has been applied which will now be modified. The block should finally look like this:
-
-    <p align="center">
-    <img src ="pic/5_Zynqblck.jpg" width="90%" height="80%"/>
-    </p>
-    <p align = "center">
-     <i> Zynq Block with DDR and Fixed IO ports</i>
-    </p>  
