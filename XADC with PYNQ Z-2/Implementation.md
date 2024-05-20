@@ -62,6 +62,6 @@
     </p>  
 
   1.	Right-click anywhere in the Diagram workspace and select **Add IP**.
-  1.    “XADC” into the Search bar, find and double click on **XADC Wizard** entry, or click on the entry and hit the Enter key to add it to the design.
-  1.     Click  **Run Block Automation**  , select all automation and OK.
-  2.   
+  1.   “XADC” into the Search bar, find and double click on **XADC Wizard** entry, or click on the entry and hit the Enter key to add it to the design.
+  1.   Click  **Run Block Automation**  , select all automation click OK.
+  1.   
