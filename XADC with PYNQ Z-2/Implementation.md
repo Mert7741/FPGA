@@ -167,6 +167,15 @@
     <i> Build the application project </i>
     </p>  
 
+###  Potentiometer Wiring Diagram with Pynq Z-2
+  
+  <p align="center">
+    <img src ="pic/15_OpenVitisTerminal.jpg" width="35%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Open the Vitis Serial Terminal </i>
+    </p> 
+
 ### Test in Hardware
 
 1.	Make sure that micro-USB cable(s) is(are) connected between the board and the PC. Change the boot mode to JTAG. Turn ON the power of the board.
@@ -175,7 +184,7 @@
    * In the Show View dialog box, type **terminal** in the search box.
    * Select **Vitis Serial Terminal** and click **Open**.
     <p align="center">
-    <img src ="pics/lab1/15_OpenVitisTerminal.jpg" width="35%" height="80%"/>
+    <img src ="pic/15_OpenVitisTerminal.jpg" width="35%" height="80%"/>
     </p>
     <p align = "center">
     <i> Open the Vitis Serial Terminal </i>
@@ -183,7 +192,7 @@
  
 1. Click the Add button in the Vitis Serial Terminal to connect to a serial terminal. Select the port from the dropdown menu. Keep the Advanced Settings as-is. Click OK.
    <p align="center">
-    <img src ="pics/lab1/16_ConnectSerial.jpg" width="35%" height="80%"/>
+    <img src ="pic/16_ConnectSerial.jpg" width="35%" height="80%"/>
     </p>
     <p align = "center">
     <i> Connect to serial port </i>
@@ -191,7 +200,7 @@
 
 1. Right-click **lab1_system > lab1** and select **Launch Hardware (Single Application Debug)**.
     <p align="center">
-    <img src ="pics/lab1/17_OpenRunConfig.jpg" width="90%" height="80%"/>
+    <img src ="pic/17_OpenRunConfig.jpg" width="90%" height="80%"/>
     </p>
     <p align = "center">
     <i> Launch Run Configurations </i>
@@ -199,7 +208,7 @@
 
 1. You should see the following output on the Terminal tab.
     <p align="center">
-    <img src ="pics/lab1/19_MemTestRun.jpg" width="60%" height="80%"/>
+    <img src ="pic/terminal.png" width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i> Connect to serial port </i>
