@@ -99,7 +99,7 @@
 
 1.	In the sources panel, right-click on **system.bd**, and select **Generate Output Products…** and click Generate to generate the Implementation, Simulation and Synthesis files for the design (You can also click on **Generate Block Design** in the Flow Navigator pane to do the same).
     <p align="center">
-    <img src ="pics/lab1/8_OP.jpg" width="40%" height="80%"/>
+    <img src ="pic/8_OP.jpg" width="40%" height="80%"/>
     </p>
     <p align = "center">
     <i> Generating output products </i>
@@ -109,14 +109,99 @@
 
     The system_wrapper.v file will be created and added to the project.  Double-click on the file to see the content in the Auxiliary pane.
     <p align="center">
-    <img src ="pics/lab1/9_wrap.jpg" width="40%" height="80%"/>
+    <img src ="pic/9_wrap.jpg" width="40%" height="80%"/>
     </p>
     <p align = "center">
     <i> The HDL Wrapper file generated and added to the project </i>
     </p>  
 
 1. Notice that the Verilog file is already set as the top module in the design, indicated by the icon.
+1. Generate Bitstream launch. 
 1. Select **File > Export > Export hardware** and click OK. Select include bitstream option.
 
 1. Basic information about the hardware configuration of the project can be found in the Xilinx Support Archive (XSA) file, along with the Address maps for the PS systems, and driver information. The .xsa file is used in the software environment to determine the peripherals available in the system, and their location in the address map.
+
+
+
+###  Vitis IDE
+
+1. Select **Tools > Launch Vitis IDE**, and Select the workspace location with any given location path. Click Launch. The Vitis IDE opens.
+1. Review the Welcome page and close it. Click **Create Application Project**, and click Next.
+1. In the Platform Selection window, select **Create a new platform from hardware (XSA)** and browse to select the system_wrapper.xsa file exported before. (Default is in the {labs}\lab1 folder).
+1. Enter **lab1_platform** as the _Platform name_, click **Next.**
+    <p align="center">
+    <img src ="pics/lab1/10_AddPlatform.jpg" width="80%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Select a platform to create the project </i>
+    </p> 
+
+1. In the project details window, name the project **lab1**, and in the Target Processor selection, select **ps7_cortexa9_0**.
+
+1. Select **Hello World** as the template in the Template Selection window. Click **Finish**.
+1.(It can select empty application C but maybe error can accury 'not included plathorm.h')
+   <p align="center">
+    <img src ="pics/lab1/12_SelTemplate.jpg" width="80%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Select a template to create the project </i>
+    </p> 
+
+1.	Expand folders in the Explorer view on the left, and observe that there are two projects – lab1_platform, and lab1_system.  The **lab1_system** project is the application that we will use to verify the functionality of the design.  The **lab1_platfrom** is a platform project includes the ps7_init function which initializes the PS as part of the first stage bootloader. The Explorer view should look something like this:
+    <p align="center">
+    <img src ="pics/lab1/13_Explorer.jpg" width="60%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> The Project Explorer view </i>
+    </p>  
+
+1. Open the memorytest.c file in the **lab1_system > lab1 > src**, and examine the contents.  This file calls the functions to test the memory.
+
+1. Build the application project either by clicking the hammer button or by right-clicking on the application project and selecting Build Project as shown in following figure. As the project builds, you can see the output in the Console window.
+    <p align="center">
+    <img src ="pics/lab1/14_Build.jpg" width="60%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Build the application project </i>
+    </p>  
+
+### Test in Hardware
+
+1.	Make sure that micro-USB cable(s) is(are) connected between the board and the PC. Change the boot mode to JTAG. Turn ON the power of the board.
+1. Open a serial communication utility for the COM port assigned on your system. The Vitis software platform provides a serial terminal utility will be used throughout the tutorial. You can also use your preferred serial terminal application.
+   * To open this utility, select **Window > Show view**.
+   * In the Show View dialog box, type **terminal** in the search box.
+   * Select **Vitis Serial Terminal** and click **Open**.
+    <p align="center">
+    <img src ="pics/lab1/15_OpenVitisTerminal.jpg" width="35%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Open the Vitis Serial Terminal </i>
+    </p>
+ 
+1. Click the Add button in the Vitis Serial Terminal to connect to a serial terminal. Select the port from the dropdown menu. Keep the Advanced Settings as-is. Click OK.
+   <p align="center">
+    <img src ="pics/lab1/16_ConnectSerial.jpg" width="35%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Connect to serial port </i>
+    </p>
+
+1. Right-click **lab1_system > lab1** and select **Launch Hardware (Single Application Debug)**.
+    <p align="center">
+    <img src ="pics/lab1/17_OpenRunConfig.jpg" width="90%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Launch Run Configurations </i>
+    </p>
+
+1. You should see the following output on the Terminal tab.
+    <p align="center">
+    <img src ="pics/lab1/19_MemTestRun.jpg" width="60%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Connect to serial port </i>
+    </p>
+
+1. Close Vivado and Vitis IDE by selecting **File > Exit** in each program.
      
