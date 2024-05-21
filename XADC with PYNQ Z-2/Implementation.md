@@ -90,6 +90,33 @@
        <p align = "center">
         <i> Block Design View </i>
         </p> 
+1.Click on the Validate Design button and make sure that there are no errors.
+1. Creat a XDC file and add pins. 
+1.   set_property -dict { PACKAGE_PIN Y11  IOSTANDARD LVCMOS33 } [get_ports { A0 }]; 
+1.   set_property -dict { PACKAGE_PIN Y12   IOSTANDARD LVCMOS33 } [get_ports { vauxn1 }];
 
+### Generate Top-Level and Export hardware
 
-    
+1.	In the sources panel, right-click on **system.bd**, and select **Generate Output Products…** and click Generate to generate the Implementation, Simulation and Synthesis files for the design (You can also click on **Generate Block Design** in the Flow Navigator pane to do the same).
+    <p align="center">
+    <img src ="pics/lab1/8_OP.jpg" width="40%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> Generating output products </i>
+    </p>  
+
+1. Right-click again on system.bd, and select Create **HDL Wrapper…** to generate the top-level VHDL model. Leave the **Let Vivado manager wrapper** and **auto-update** option selected, and click OK.
+
+    The system_wrapper.v file will be created and added to the project.  Double-click on the file to see the content in the Auxiliary pane.
+    <p align="center">
+    <img src ="pics/lab1/9_wrap.jpg" width="40%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i> The HDL Wrapper file generated and added to the project </i>
+    </p>  
+
+1. Notice that the Verilog file is already set as the top module in the design, indicated by the icon.
+1. Select **File > Export > Export hardware** and click OK. Select include bitstream option.
+
+1. Basic information about the hardware configuration of the project can be found in the Xilinx Support Archive (XSA) file, along with the Address maps for the PS systems, and driver information. The .xsa file is used in the software environment to determine the peripherals available in the system, and their location in the address map.
+     
