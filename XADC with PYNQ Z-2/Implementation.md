@@ -130,7 +130,7 @@
 1. In the Platform Selection window, select **Create a new platform from hardware (XSA)** and browse to select the system_wrapper.xsa file exported before. (Default is in the {labs}\lab1 folder).
 1. Enter **lab1_platform** as the _Platform name_, click **Next.**
     <p align="center">
-    <img src ="pics/lab1/10_AddPlatform.jpg" width="80%" height="80%"/>
+    <img src ="pic/10_AddPlatform.jpg" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i> Select a platform to create the project </i>
@@ -149,7 +149,7 @@
 
 1.	Expand folders in the Explorer view on the left, and observe that there are two projects – lab1_platform, and lab1_system.  The **lab1_system** project is the application that we will use to verify the functionality of the design.  The **lab1_platfrom** is a platform project includes the ps7_init function which initializes the PS as part of the first stage bootloader. The Explorer view should look something like this:
     <p align="center">
-    <img src ="pics/lab1/13_Explorer.jpg" width="60%" height="80%"/>
+    <img src ="pic/13_Explorer.jpg" width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i> The Project Explorer view </i>
@@ -159,7 +159,7 @@
 
 1. Build the application project either by clicking the hammer button or by right-clicking on the application project and selecting Build Project as shown in following figure. As the project builds, you can see the output in the Console window.
     <p align="center">
-    <img src ="pics/lab1/14_Build.jpg" width="60%" height="80%"/>
+    <img src ="pic/14_Build.jpg" width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i> Build the application project </i>
