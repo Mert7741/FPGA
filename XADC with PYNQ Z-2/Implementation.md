@@ -139,9 +139,9 @@
 1. In the project details window, name the project **lab1**, and in the Target Processor selection, select **ps7_cortexa9_0**.
 
 1. Select **Hello World** as the template in the Template Selection window. Click **Finish**.
-1.(It can select empty application C but maybe error can accury 'not included plathorm.h')
+1. (You can select the empty C application, but sometimes an error may appear that the platform h library is not included.).
    <p align="center">
-    <img src ="pics/lab1/12_SelTemplate.jpg" width="80%" height="80%"/>
+    <img src ="pic/12_SelTemplate.jpg" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i> Select a template to create the project </i>
@@ -155,7 +155,9 @@
     <i> The Project Explorer view </i>
     </p>  
 
-1. Open the memorytest.c file in the **lab1_system > lab1 > src**, and examine the contents.  This file calls the functions to test the memory.
+1. Open the helloworld.c file in the **lab1_system > lab1 > src > **, and examine the contents.
+1. Delete the code inside the hello world file and copy the following code (main.c)
+  
 
 1. Build the application project either by clicking the hammer button or by right-clicking on the application project and selecting Build Project as shown in following figure. As the project builds, you can see the output in the Console window.
     <p align="center">
