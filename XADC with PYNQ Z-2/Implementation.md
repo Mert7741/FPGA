@@ -170,11 +170,14 @@
 ###  Potentiometer Wiring Diagram with Pynq Z-2
   
   <p align="center">
-    <img src ="pic/15_OpenVitisTerminal.jpg" width="35%" height="80%"/>
+    <img src ="pic/pynq.jpeg" width="35%" height="80%"/>
     </p>
     <p align = "center">
-    <i> Open the Vitis Serial Terminal </i>
+    <i> PYNQ Z-2 Board </i>
     </p> 
+1.  First pin connect to 3.3V.
+  Middle pin connect to A0.
+  Last pin connect to GND.
 
 ### Test in Hardware
 
